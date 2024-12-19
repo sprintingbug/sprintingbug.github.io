@@ -3,66 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Zenia Peruda - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-
-    <!-- Navigation Bar -->
-    <nav class="navbar">
+    <nav id="navbar">
         <div class="container">
+            <a href="#" class="logo">ZP</a>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#bio">Bio</a></li>
                 <li><a href="#education">Education</a></li>
-                <li><a href="#body-of-work">Projects</a></li>
+                <li><a href="#projects">Projects</a></li>
             </ul>
+            <button id="theme-toggle" aria-label="Toggle dark mode">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            </button>
         </div>
     </nav>
 
-    <!-- Header Section -->
-<header class="header">
-    <div class="container">
-        <div class="header-content">
-            <div class="header-text">
+    <header id="hero">
+        <div class="container">
+            <div class="hero-content">
                 <h1 class="name">Zenia Peruda</h1>
                 <p class="degree">BS Computer Science</p>
-                <a href="#about" class="btn">SEE MORE</a>
+                <a href="#about" class="cta-button">SEE MORE</a>
             </div>
-            <div class="header-image">
-                <img src="pfp1.JPEG" alt="Zenia Peruda" class="profile-img">
+            <div class="hero-image">
+                <img src="pfp1.jpeg" alt="Zenia Peruda" class="profile-img">
             </div>
         </div>
-    </div>
-</header>
+    </header>
 
-
-    <!-- About Section -->
-    <section id="about" class="about-section">
+    <section id="about">
         <div class="container">
-            <h2 class="section-title">Step into my world</h2>
+            <h2>Step into my world</h2>
             <div class="about-content">
-                <div class="text">
-                    <p>Zenia Peruda, is a dedicated and driven Computer Science student with a natural flair for leadership and collaboration. Known for their exceptional problem-solving abilities and technical acumen, they excel both in individual projects and as a key contributor to team efforts. With a strong foundation in programming, algorithms, and software development, they combine their technical expertise with a warm and approachable demeanor that makes them a trusted team member and a motivating leader.</p>
-                    <p>Beyond academics, Zenia stands out for their strong interpersonal skills and commitment to fostering a positive and inclusive environment. Whether leading a group project, organizing study sessions, or mentoring peers, they consistently demonstrate empathy, communication, and a proactive approach to challenges. Their leadership style is centered on empowering others, encouraging collaboration, and maintaining a focus on shared goals.</p>
+                <div class="about-text">
+                    <p>Zenia Peruda, is a dedicated and driven Computer Science student with a natural flair for leadership and collaboration. Known for her exceptional problem-solving abilities and technical acumen, they excel both in individual projects and as a key contributor to team efforts.</p>
+                </br>
+                    <p>Beyond academics, Zenia stands out for their strong interpersonal skills and commitment to fostering a positive and inclusive environment. Whether leading a group project, organizing study sessions, or mentoring peers, they consistently demonstrate empathy, communication, and a proactive approach to challenges.</p>
                 </div>
-                <div class="image">
+                <div class="about-image">
                     <img src="about.JPEG" alt="Zenia Peruda">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Bio Section -->
-    <section id="bio" class="bio-section">
+    <section id="bio">
         <div class="container">
-            <h2 class="section-title">About Zenia</h2>
+            <h2>About Zenia</h2>
             <div class="bio-content">
-                <div class="bio-text">
+                <div class="bio-card">
                     <h3>BIO</h3>
                     <p>Originating from Philippines, Zenia Peruda is an academically-inclined person. Her work consists of a mix of passion and smarts that enables her to keep a lot of lessons from different aspects of the world.</p>
                 </div>
-                <div class="approach-text">
+                <div class="bio-card">
                     <h3>MY APPROACH</h3>
                     <p>Zenia's approach to creating programs is focused on developing intuitive, efficient, and user-centered solutions. She believes that the key to successful software development lies not just in coding, but in understanding user needs and delivering seamless, well-optimized experiences.</p>
                 </div>
@@ -70,84 +69,82 @@
         </div>
     </section>
 
-    <!-- Education Section -->
-    <section id="education" class="education-section">
+    <section id="education">
         <div class="container">
-            <h2 class="section-title">Education</h2>
+            <h2>Education</h2>
             <div class="education-content">
-                <div class="education-item">
+                <div class="education-card">
                     <h3>Bachelor of Science in Computer Science</h3>
-                    <p><strong>Lyceum of the Philippines - Cavite</strong></p>
-                    <p><em>Concentration: Software Engineering</em></p>
+                    <p class="school">Lyceum of the Philippines - Cavite</p>
+                    <p class="concentration">Concentration: Software Engineering</p>
                     <p>Class of '27, with a minor concentration in managing administrative tasks and project.</p>
                 </div>
-                <div class="education-item">
+                <div class="education-card">
                     <h3>Senior High School</h3>
-                    <p><strong>Emilio Aguinaldo College - Cavite</strong></p>
-                    <p><em>Specialization: STEM</em></p>
-                    <p>In addition to excelling in technical subjects is deeply committed to developing practical solutions that blend both technical skills and creative insight. Whether working on a coding project, designing a prototype, or conducting experiments, they approach each task with precision, attention to detail, and a clear focus on improving systems and processes. </p>
+                    <p class="school">Emilio Aguinaldo College - Cavite</p>
+                    <p class="concentration">Specialization: STEM</p>
+                    <p>Excelled in technical subjects and committed to developing practical solutions that blend both technical skills and creative insight.</p>
                 </div>
-                <div class="education-item">
+                <div class="education-card">
                     <h3>High School</h3>
-                    <p><strong>Claremont School of General Trias</strong></p>
-                    <p><em>Grade 7-10</em></p>
-                    <p>She is a dedicated middle school student who excels in a variety of subjects, demonstrating a strong foundation in core academic areas such as math, science, language arts, and social studies. </p>
+                    <p class="school">Claremont School of General Trias</p>
+                    <p class="concentration">Grade 7-10</p>
+                    <p>Dedicated middle school student who excelled in a variety of subjects, demonstrating a strong foundation in core academic areas.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Body of Work Section -->
-    <section id="body-of-work" class="body-of-work-section">
+    <section id="projects">
         <div class="container">
-            <h2 class="section-title">Projects</h2>
-            <div class="work-grid">
-                <div class="work-item">
-                    <div class="work-year">2024</div>
-                    <h3><a href="calc.py">Calculator</a></h3>
-                    <img src="w1.png" alt="Python Calculator">
-                    <p>A python calculator made in one of our OOP classes </p>
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="w1.png" alt="Calculator">
+                    <div class="project-info">
+                        <span class="project-year">2024</span>
+                        <h3><a href="https://github.com/sprintingbug/calc">Calculator</a></h3>
+                        <p>A python calculator made in one of our OOP classes</p>
+                    </div>
                 </div>
-                <div class="work-item">
-                    <div class="work-year">2024</div>
-                    <h3><a href="basiccalculator.py">Basic Calculator</a></h3>
+                <div class="project-card">
                     <img src="w2.png" alt="Basic Calculator">
-                    <p>A python calculator made in one of our OOP classes </p>
+                    <div class="project-info">
+                        <span class="project-year">2024</span>
+                        <h3><a href="https://github.com/sprintingbug/basiccalculator">Basic Calculator</a></h3>
+                        <p>A python calculator made in one of our OOP classes</p>
+                    </div>
                 </div>
-                <div class="work-item">
-                    <div class="work-year">2024</div>
-                    <h3><a href="zipperuda_web/index.html">House of the Dragon Inspired Website</a></h3>
+                <div class="project-card">
                     <img src="w3.png" alt="House of the Dragon Inspired Website">
-                    <p>A suspenseful noir-inspired thriller where a private investigator delves into a web of conspiracy and intrigue in the dimly lit streets of a mysterious city.</p>
+                    <div class="project-info">
+                        <span class="project-year">2024</span>
+                        <h3><a href="https://github.com/sprintingbug/zipperuda_web">House of the Dragon Inspired Website</a></h3>
+                        <p>A suspenseful noir-inspired thriller where a private investigator delves into a web of conspiracy and intrigue in the dimly lit streets of a mysterious city.</p>
+                    </div>
                 </div>
-                <div class="work-item">
-                    <div class="work-year">2018</div>
-                    <h3>Cryptic Descent</h3>
-                    <img src="https://via.placeholder.com/300" alt="Cryptic Descent">
-                    <p>A spine-tingling horror-thriller that takes place in an abandoned asylum, where a group of urban explorers encounters supernatural forces.</p>
+                <div class="project-card">
+                    <img src="w4.png" alt="House of the Dragon Inspired Website Ver">
+                    <div class="project-info">
+                        <span class="project-year">2024</span>
+                        <h3><a href="https://github.com/sprintingbug/zipperuda_web">House of the Dragon Inspired Website</a></h3>
+                        <p>A suspenseful noir-inspired thriller where a private investigator delves into a web of conspiracy and intrigue in the dimly lit streets of a mysterious city.</p>
+                    </div>
                 </div>
-                <div class="work-item">
-                    <div class="work-year">2016</div>
-                    <h3>The Vanishing Act</h3>
-                    <img src="https://via.placeholder.com/300" alt="The Vanishing Act">
-                    <p>A psychological thriller that explores the unsettling disappearance of a renowned illusionist, forcing a journalist to untangle the threads of illusion.</p>
-                </div>
-                <div class="work-item">
-                    <div class="work-year">2013</div>
-                    <h3>Reflections of Fear</h3>
-                    <img src="https://via.placeholder.com/300" alt="Reflections of Fear">
-                    <p>A haunting thriller that blurs the lines between reality and the supernatural as a young woman confronts her own reflections in an eerie old mirror.</p>
-                </div>
+                
+             
             </div>
         </div>
     </section>
 
-    <!-- Footer Section -->
-    <footer class="footer">
+    <footer>
         <div class="container">
-            <p>© 2024 Zenia Peruda. All rights reserved.</p>
+            <p>&copy; 2024 Zenia Peruda. All rights reserved.</p>
         </div>
     </footer>
 
+    <button id="back-to-top" aria-label="Back to top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+    </button>
 </body>
 </html>
