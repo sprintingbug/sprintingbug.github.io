@@ -167,6 +167,13 @@ p.lead{font-size:16px;max-width:62ch}
 .toolbar button{font-family:var(--mono);font-size:11px;letter-spacing:.06em;cursor:pointer;background:transparent;color:rgba(231,223,203,.8);border:1px solid rgba(231,223,203,.35);padding:7px 13px;border-radius:2px;transition:.2s}
 .toolbar button:hover{background:var(--gold);color:var(--char);border-color:var(--gold)}
 
+.lightbox{display:none;position:fixed;inset:0;z-index:10000;background:rgba(0,0,0,.92);align-items:center;justify-content:center;cursor:zoom-out}
+.lightbox.active{display:flex}
+.lightbox img{max-width:90vw;max-height:90vh;object-fit:contain;border-radius:3px;box-shadow:0 20px 60px rgba(0,0,0,.6)}
+.lightbox-close{position:absolute;top:20px;right:28px;font-family:var(--mono);font-size:20px;color:rgba(255,255,255,.7);cursor:pointer;line-height:1;border:none;background:none}
+.lightbox-close:hover{color:#fff}
+.card .thumb img{cursor:zoom-in}
+
 .pg-track{width:100%;border:1px solid var(--line);border-radius:2px;background:rgba(0,0,0,.12);overflow:hidden}
 .pg-track img{width:100%;display:none;object-fit:contain}
 .pg-track img.active{display:block}
